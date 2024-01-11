@@ -16,13 +16,13 @@ public class KafkaTopicConfig {
     private String topicJsonName;
 
     @Bean
-    public NewTopic walatechTopic(){
+    public NewTopic topic(){
         return TopicBuilder.name(topicName)
                 .build();
     }
 
     @Bean
-    public NewTopic walatechJsonTopic(){
+    public NewTopic jsonTopic(){
         return TopicBuilder.name(topicJsonName)
                 .build();
     }
